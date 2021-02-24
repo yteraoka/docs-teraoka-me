@@ -1,0 +1,502 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>gcloud · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro-fixed/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-@dogatana/page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-@dogatana/honkit-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../assets/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../debian/" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../aws/">
+            
+                <a href="../aws/">
+            
+                    
+                    AWS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../aws/ec2.html">
+            
+                <a href="../aws/ec2.html">
+            
+                    
+                    EC2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../aws/route53.html">
+            
+                <a href="../aws/route53.html">
+            
+                    
+                    Route53
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../aws/bookmarks.html">
+            
+                <a href="../aws/bookmarks.html">
+            
+                    
+                    読み物
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    GCP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="gcloud.html">
+            
+                <a href="gcloud.html">
+            
+                    
+                    gcloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../debian/">
+            
+                <a href="../debian/">
+            
+                    
+                    Debian
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../postgresql/">
+            
+                <a href="../postgresql/">
+            
+                    
+                    PostgreSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../mysql/">
+            
+                <a href="../mysql/">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../kubernetes/">
+            
+                <a href="../kubernetes/">
+            
+                    
+                    Kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >gcloud</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="gcloud">gcloud</h1>
+<h2 id="ディレクトリ">ディレクトリ</h2>
+<p>デフォルトでは <code>~/.config/gcloud</code> に設定ファイルとか認証情報の類が配置される</p>
+<p><code>gcloud init</code> コマンドを実行することで初期化することができるが、この設定情報は複数持って切り替えることができる</p>
+<pre><code class="lang-bash">$ gcloud config configurations
+ERROR: (gcloud.config.configurations) Command name argument expected.
+
+Available commands <span class="hljs-keyword">for</span> gcloud config configurations:
+
+      activate                Activates an existing named configuration.
+      create                  Creates a new named configuration.
+      delete                  Deletes a named configuration.
+      describe                Describes a named configuration by listing its
+                              properties.
+      list                    Lists existing named configurations.
+
+For detailed information on this <span class="hljs-built_in">command</span> and its flags, run:
+  gcloud config configurations --<span class="hljs-built_in">help</span>
+</code></pre>
+<p>また、このディレクトリは環境変数 <code>CLOUDSDK_CONFIG</code> で変更することができる</p>
+<h2 id="ディレクトリ切り替えスクリプト">ディレクトリ切り替えスクリプト</h2>
+<pre><code class="lang-zsh"><span class="hljs-keyword">function</span> gcenv {
+  <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;<span class="hljs-variable">$1</span>&quot;</span> <span class="hljs-keyword">in</span>
+    create)
+      <span class="hljs-keyword">if</span> [ -z <span class="hljs-string">&quot;<span class="hljs-variable">$2</span>&quot;</span> ] ; <span class="hljs-keyword">then</span>
+        <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Usage: gcenv create &lt;profile-name&gt;&quot;</span> 1&gt;&amp;2
+        <span class="hljs-built_in">return</span> 1
+      <span class="hljs-keyword">fi</span>
+      <span class="hljs-keyword">if</span> [ ! -d <span class="hljs-string">&quot;<span class="hljs-variable">$HOME</span>/.gcloud/<span class="hljs-variable">$2</span>&quot;</span> ] ; <span class="hljs-keyword">then</span>
+        mkdir -p <span class="hljs-string">&quot;<span class="hljs-variable">$HOME</span>/.gcloud/<span class="hljs-variable">$2</span>&quot;</span>
+        <span class="hljs-built_in">export</span> CLOUDSDK_CONFIG=<span class="hljs-string">&quot;<span class="hljs-variable">$HOME</span>/.gcloud/<span class="hljs-variable">$2</span>&quot;</span>
+      <span class="hljs-keyword">else</span>
+        <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;already exists&quot;</span> 1&gt;&amp;2
+        <span class="hljs-built_in">return</span> 0
+      <span class="hljs-keyword">fi</span>
+      ;;
+    show)
+      <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;CLOUDSDK_CONFIG=<span class="hljs-variable">${CLOUDSDK_CONFIG}</span>&quot;</span>
+      <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;GOOGLE_APPLICATION_CREDENTIALS=<span class="hljs-variable">${GOOGLE_APPLICATION_CREDENTIALS}</span>&quot;</span>
+      ;;
+    list|ls)
+      ls -d <span class="hljs-variable">$HOME</span>/.gcloud/*
+      ;;
+    /*)
+      <span class="hljs-keyword">if</span> [ -d <span class="hljs-string">&quot;<span class="hljs-variable">$1</span>&quot;</span> ] ; <span class="hljs-keyword">then</span>
+        <span class="hljs-built_in">export</span> CLOUDSDK_CONFIG=<span class="hljs-string">&quot;<span class="hljs-variable">$1</span>&quot;</span>
+      <span class="hljs-keyword">fi</span>
+      ;;
+    *)
+      <span class="hljs-keyword">if</span> [ -z <span class="hljs-string">&quot;<span class="hljs-variable">$1</span>&quot;</span> ] ; <span class="hljs-keyword">then</span>
+        <span class="hljs-built_in">export</span> CLOUDSDK_CONFIG=$(ls -d <span class="hljs-variable">$HOME</span>/.gcloud/* | sort | fzf)
+      <span class="hljs-keyword">elif</span> [ -d <span class="hljs-string">&quot;<span class="hljs-variable">$HOME</span>/.gcloud/<span class="hljs-variable">$1</span>&quot;</span> ] ; <span class="hljs-keyword">then</span>
+        <span class="hljs-built_in">export</span> CLOUDSDK_CONFIG=<span class="hljs-string">&quot;<span class="hljs-variable">$HOME</span>/.gcloud/<span class="hljs-variable">$1</span>&quot;</span>
+      <span class="hljs-keyword">else</span>
+        <span class="hljs-built_in">export</span> CLOUDSDK_CONFIG=$(ls -d <span class="hljs-variable">$HOME</span>/.gcloud/* | sort | fzf)
+      <span class="hljs-keyword">fi</span>
+      ;;
+  <span class="hljs-keyword">esac</span>
+
+  <span class="hljs-keyword">if</span> [ -n <span class="hljs-string">&quot;<span class="hljs-variable">${CLOUDSDK_CONFIG}</span>&quot;</span> ] ; <span class="hljs-keyword">then</span>
+    <span class="hljs-keyword">if</span> [ -f <span class="hljs-string">&quot;<span class="hljs-variable">${CLOUDSDK_CONFIG}</span>/application_default_credentials.json&quot;</span> ] ; <span class="hljs-keyword">then</span>
+      <span class="hljs-built_in">export</span> GOOGLE_APPLICATION_CREDENTIALS=<span class="hljs-string">&quot;<span class="hljs-variable">${CLOUDSDK_CONFIG}</span>/application_default_credentials.json&quot;</span>
+    <span class="hljs-keyword">fi</span>
+  <span class="hljs-keyword">fi</span>
+}
+</code></pre>
+<h2 id="認証">認証</h2>
+<p>gcloud コマンドなどで GCP の API にアクセスするためにはログインが必要で、次のコマンドでログインすることができる</p>
+<pre><code>gcloud auth login --no-launch-browser
+</code></pre><p><code>--no-launch-browser</code> をつけない場合は最後に使ったブラウザで承認ウインドウが開くため、複数プロファイルで
+ブラウザを使っている場合には嬉しくないことがある</p>
+<h2 id="サービスアカウント">サービスアカウント</h2>
+<p>Terraform などを使う場合は ServiceAccount が必要になるが Google Account や Cloud Identity、Google Workspace (G Suite) のアカウントでやりたい
+そういう場合に default credential というものが使える</p>
+<p>次のコマンドで <code>~/.config/gcloud/application_default_credentials.json</code> に作成される</p>
+<p>ディレクトリは <code>CLOUDSDK_CONFIG</code> が設定されていればそこに作成される</p>
+<pre><code>gcloud auth application-default login --no-launch-browser
+</code></pre><p>これで作成されたファイルの PATH を環境変数 <code>GOOGLE_APPLICATION_CREDENTIALS</code> に設定する</p>
+<h2 id="project-設定">Project 設定</h2>
+<p>現在の config の project を変更するには次のコマンドを使う</p>
+<pre><code class="lang-bash">gcloud config <span class="hljs-built_in">set</span> project PROJECT-ID
+</code></pre>
+<h2 id="現在の設定確認">現在の設定確認</h2>
+<pre><code class="lang-bash">gcloud config list
+</code></pre>
+<p><code>gcloud config configurations</code> コマンドで config は複数持って切り替えることが可能</p>
+<p>ただし、ファイルに書かれるため shell ごとに切り替えたいという場合はディレクトリを分けて
+環境変数 <code>CLOUDSDK_CONFIG</code> で切り替える必要がある</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: GCP">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../debian/" class="navigation navigation-next " aria-label="Next page: Debian">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"gcloud","level":"1.3.1","depth":2,"next":{"title":"Debian","level":"1.4","depth":1,"path":"debian/README.md","ref":"debian/README.md","articles":[]},"previous":{"title":"GCP","level":"1.3","depth":1,"path":"gcp/README.md","ref":"gcp/README.md","articles":[{"title":"gcloud","level":"1.3.1","depth":2,"path":"gcp/gcloud.md","ref":"gcp/gcloud.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro-fixed","custom-js-css","copy-code-button","@dogatana/page-toc-button","@dogatana/honkit-plugin-back-to-top-button"],"styles":{"website":"assets/website.css"},"pluginsConfig":{"search-pro-fixed":{},"custom-js-css":{},"copy-code-button":{},"@dogatana/page-toc-button":{},"@dogatana/honkit-plugin-back-to-top-button":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"gcp/gcloud.md","mtime":"2021-02-24T13:15:11.670Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-02-24T13:24:57.159Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro-fixed/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro-fixed/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-@dogatana/page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-@dogatana/honkit-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
