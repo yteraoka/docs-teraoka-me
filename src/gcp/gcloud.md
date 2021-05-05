@@ -1,5 +1,17 @@
 # gcloud
 
+## エンタープライズ企業のベスト プラクティス
+
+https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations
+
+## Google Cloud 設定のチェックリスト
+
+https://cloud.google.com/docs/enterprise/onboarding-checklist
+
+## Google Cloud で解決する
+
+https://cloud.google.com/docs/tutorials
+
 ## ディレクトリ
 
 デフォルトでは `~/.config/gcloud` に設定ファイルとか認証情報の類が配置される
@@ -78,7 +90,7 @@ function gcenv {
 
 gcloud コマンドなどで GCP の API にアクセスするためにはログインが必要で、次のコマンドでログインすることができる
 
-```
+```bash
 gcloud auth login --no-launch-browser
 ```
 
@@ -95,7 +107,7 @@ Terraform などを使う場合は ServiceAccount が必要になるが Google A
 
 ディレクトリは `CLOUDSDK_CONFIG` が設定されていればそこに作成される
 
-```
+```bash
 gcloud auth application-default login --no-launch-browser
 ```
 
@@ -119,3 +131,12 @@ gcloud config list
 
 ただし、ファイルに書かれるため shell ごとに切り替えたいという場合はディレクトリを分けて
 環境変数 `CLOUDSDK_CONFIG` で切り替える必要がある
+
+## ServiceAccount の権限確認
+
+```bash
+gcloud asset search-all-iam-policies \
+  --query 'policy:"aerviceAccount:SERViCE-ACCOUNT-NAME@PROJECT-ID.iam.gserviceaccount.com"'
+```
+
+https://cloud.google.com/asset-inventory/docs/searching-iam-policies

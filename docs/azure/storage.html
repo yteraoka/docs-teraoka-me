@@ -1,0 +1,800 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Azure Storage · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro-fixed/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-@dogatana/page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-@dogatana/honkit-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../assets/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="storage-cli.html" />
+    
+    
+    <link rel="prev" href="monitor.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../aws/">
+            
+                <a href="../aws/">
+            
+                    
+                    AWS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../aws/ec2.html">
+            
+                <a href="../aws/ec2.html">
+            
+                    
+                    EC2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../aws/route53.html">
+            
+                <a href="../aws/route53.html">
+            
+                    
+                    Route53
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../aws/bookmarks.html">
+            
+                <a href="../aws/bookmarks.html">
+            
+                    
+                    読み物
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../gcp/">
+            
+                <a href="../gcp/">
+            
+                    
+                    GCP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../gcp/gcloud.html">
+            
+                <a href="../gcp/gcloud.html">
+            
+                    
+                    gcloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../gcp/gke/README.md">
+            
+                <span>
+            
+                    
+                    GKE
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../gcp/gke/anetd.html">
+            
+                <a href="../gcp/gke/anetd.html">
+            
+                    
+                    anetd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../gcp/gke/netd.html">
+            
+                <a href="../gcp/gke/netd.html">
+            
+                    
+                    netd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../gcp/gke/dns.html">
+            
+                <a href="../gcp/gke/dns.html">
+            
+                    
+                    dns
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Azure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="aks.html">
+            
+                <a href="aks.html">
+            
+                    
+                    AKS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="data-explorer.html">
+            
+                <a href="data-explorer.html">
+            
+                    
+                    data-explorer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="monitor.html">
+            
+                <a href="monitor.html">
+            
+                    
+                    Azure Monitor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="storage.html">
+            
+                <a href="storage.html">
+            
+                    
+                    Azure Storage
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="storage-cli.html">
+            
+                <a href="storage-cli.html">
+            
+                    
+                    CLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../debian/">
+            
+                <a href="../debian/">
+            
+                    
+                    Debian
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../postgresql/">
+            
+                <a href="../postgresql/">
+            
+                    
+                    PostgreSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../postgresql/anonymizer.html">
+            
+                <a href="../postgresql/anonymizer.html">
+            
+                    
+                    anonymizer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../postgresql/backup-and-restore.html">
+            
+                <a href="../postgresql/backup-and-restore.html">
+            
+                    
+                    backup and restore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../postgresql/barman.html">
+            
+                <a href="../postgresql/barman.html">
+            
+                    
+                    barman
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../postgresql/clustering.html">
+            
+                <a href="../postgresql/clustering.html">
+            
+                    
+                    clustering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../postgresql/repmgr.html">
+            
+                <a href="../postgresql/repmgr.html">
+            
+                    
+                    repmgr
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../mysql/">
+            
+                <a href="../mysql/">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../kubernetes/">
+            
+                <a href="../kubernetes/">
+            
+                    
+                    Kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../rhel8/">
+            
+                <a href="../rhel8/">
+            
+                    
+                    Red Hat Enterprise Linux 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../terraform/">
+            
+                <a href="../terraform/">
+            
+                    
+                    Terraform
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../vault/">
+            
+                <a href="../vault/">
+            
+                    
+                    Vault
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../locust/">
+            
+                <a href="../locust/">
+            
+                    
+                    locust
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../go/">
+            
+                <a href="../go/">
+            
+                    
+                    go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../misc/">
+            
+                <a href="../misc/">
+            
+                    
+                    misc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Azure Storage</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="azure-storage">Azure Storage</h1>
+<ul>
+<li>Amazon S3 や Google Cloud Storage 同様、Storage Account 名は Global でユニークである必要がある</li>
+<li>ただし、Azure の場合はアルファベットの小文字と数字しか使えず、3文字から24文字までにする必要がある</li>
+</ul>
+<h2 id="redundancy">Redundancy</h2>
+<p><a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy" target="_blank">https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy</a></p>
+<p>durability は高いが availability は 99.9% 程度</p>
+<h3 id="locally-redundant-storage-lrs">Locally-redundant storage (LRS)</h3>
+<ul>
+<li>単一データセンター内に3つのコピーを持つ</li>
+<li>99.999999999% (11 nines) durability (耐久性) (年間)</li>
+<li>最も低コスト</li>
+<li>サーバー、ラック、ストレージの故障に対応</li>
+<li>書き込みは 3 つのコピーへの書き込みが完了してからレスポンスが返される</li>
+</ul>
+<h3 id="zone-redundant-storage-zrs">Zone-redundant storage (ZRS)</h3>
+<ul>
+<li>リージョン内の 3 つの AZ にコピーが保存される</li>
+<li>99.9999999999% (12 9&apos;s) over の durability (耐久性) (年間)</li>
+<li>Zone 障害に備えて exponential back-off つきの retry を検討するべし</li>
+<li>書き込みは 3 つの AZ のコピーが完了してからレスポンスが返される</li>
+<li>全てのリージョン、全ての Storage account type がサポートされているわけではない</li>
+<li>例えば Japan East は対応しているが Japan West は非対応 (2021-03-03)</li>
+</ul>
+<h3 id="geo-redundant-storage-grs">Geo-redundant storage (GRS)</h3>
+<ul>
+<li>Secondary リージョンへ複製を持つことでリージョン障害への耐性を持つ</li>
+<li>Primary リージョンと Secondary リージョンの組みは決まっており、任意の組み合わせを選択することはできない</li>
+<li>Primary, Secondary それぞれで LRS (特定ゾーン内での3つのコピー) が保持される</li>
+<li>単一ゾーン内にしか保存されないため、リージョン障害でなくても Secondary へ切り替える必要が発生する可能性がある</li>
+<li>Secondary リージョンのデータへアクセスするためにはフェイルオーバーを行う必要がある</li>
+<li>99.99999999999999% (16 9&apos;s) over の durability (耐久性) (年間)</li>
+<li>書き込みは Primary の LRS への書き込み完了後に非同期で Secondary にコピーされる</li>
+</ul>
+<p><a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy#read-access-to-data-in-the-secondary-region" target="_blank">https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy#read-access-to-data-in-the-secondary-region</a></p>
+<p><a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-disaster-recovery-guidance" target="_blank">https://docs.microsoft.com/en-us/azure/storage/common/storage-disaster-recovery-guidance</a></p>
+<h3 id="geo-zone-redundant-storage-gzrs">Geo-zone-redundant storage (GZRS)</h3>
+<ul>
+<li>GRS との違いは Primary が ZRS (3つのゾーンにコピー) されることだけ</li>
+<li>Secondary は LRS (単一ゾーン内の3つのコピー)</li>
+<li>general-purpose v2 storage accounts だけをサポート</li>
+</ul>
+<p>対応リージョン</p>
+<ul>
+<li>Asia Southeast</li>
+<li>Europe North</li>
+<li>Europe West</li>
+<li>Japan East</li>
+<li>UK South</li>
+<li>US Central</li>
+<li>US East</li>
+<li>US East 2</li>
+<li>US West 2</li>
+</ul>
+<h2 id="data-integrity">Data integrity</h2>
+<p>定期的に cyclic redundancy checks (CRCs) でチェックされており、不整合が見つかればコピーから復元される</p>
+<h2 id="types-of-storage-accounts">Types of storage accounts</h2>
+<p>Terraform では account_kind という項目</p>
+<ul>
+<li><strong>General-purpose v2 accounts</strong><ul>
+<li>BLOB、ファイル、キュー、およびテーブルの基本的なストレージアカウントタイプ</li>
+<li>AzureStorage を使用するほとんどのシナリオに推奨される</li>
+</ul>
+</li>
+<li><strong>General-purpose v1 accounts</strong><ul>
+<li>General-purpose v2 を使うべき</li>
+</ul>
+</li>
+<li><strong>BlockBlobStorage accounts</strong><ul>
+<li>Block BLOB および Append BLOB の優れたパフォーマンス特性を備えたストレージアカウント</li>
+<li>トランザクション率が高いシナリオ、またはより小さなオブジェクトを使用するシナリオ、または一貫して低いストレージレイテンシを必要とするシナリオに推奨される</li>
+</ul>
+</li>
+<li><strong>FileStorage accounts</strong><ul>
+<li>プレミアムパフォーマンス特性を備えたファイルのみのストレージアカウント</li>
+<li>エンタープライズまたは高性能スケールのアプリケーションに推奨される</li>
+</ul>
+</li>
+<li><strong>BlobStorage accounts</strong><ul>
+<li>General-purpose v2 を使うべき</li>
+</ul>
+</li>
+</ul>
+<p>FileStorage と BlockBlobStorage では account tier を Premium にする必要がある</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="monitor.html" class="navigation navigation-prev " aria-label="Previous page: Azure Monitor">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="storage-cli.html" class="navigation navigation-next " aria-label="Next page: CLI">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Azure Storage","level":"1.4.4","depth":2,"next":{"title":"CLI","level":"1.4.4.1","depth":3,"path":"azure/storage-cli.md","ref":"azure/storage-cli.md","articles":[]},"previous":{"title":"Azure Monitor","level":"1.4.3","depth":2,"path":"azure/monitor.md","ref":"azure/monitor.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro-fixed","custom-js-css","copy-code-button","@dogatana/page-toc-button","@dogatana/honkit-plugin-back-to-top-button","livereload"],"styles":{"website":"assets/website.css"},"pluginsConfig":{"livereload":{},"@dogatana/page-toc-button":{},"search-pro-fixed":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"custom-js-css":{},"@dogatana/honkit-plugin-back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"azure/storage.md","mtime":"2021-03-04T08:36:26.878Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-05-05T10:25:19.151Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro-fixed/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro-fixed/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-@dogatana/page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-@dogatana/honkit-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
