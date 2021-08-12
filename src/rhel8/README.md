@@ -20,7 +20,7 @@ dnf リポジトリを使う為には subscription 登録が必要
 https://nwengblog.com/redhat-memo/
 
 ```
-sudo subscription-manager register --username rh-teraoka --password liss4VAUX@lo1supt [--name HOSTNAME]
+sudo subscription-manager register --username rh-teraoka --password PASSWORD [--name HOSTNAME]
 ```
 
 ```
@@ -30,6 +30,23 @@ sudo subscription-manager attach
 https://access.redhat.com/management/systems で登録されたシステムを確認することができる
 
 不要になったら `remove` と `unregister` で解除して `clean` でローカルのファイルをきれいにする（のかな）
+
+```
+$ sudo subscription-manager remove --all
+1 local certificate has been deleted.
+1 subscription removed at the server.
+```
+
+```
+$ sudo subscription-manager unregister
+Unregistering from: subscription.rhsm.redhat.com:443/subscription
+System has been unregistered.
+```
+
+```
+$ sudo subscription-manager clean
+All local data removed
+```
 
 ## Ansible でやる方法
 

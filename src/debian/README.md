@@ -22,3 +22,15 @@ sudo apt-file update
 ```
 apt-file list <package_name>
 ```
+
+## あのファイル、どのパッケージかな？を探す
+
+```
+sudo apt-get install apt-file
+sudo apt-file update
+apt-file search FILENAME
+```
+
+## あの command をインストール
+
+### telnet

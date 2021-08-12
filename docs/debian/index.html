@@ -141,7 +141,33 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../aws/bookmarks.html">
+        <li class="chapter " data-level="1.2.3" data-path="../aws/firehose.html">
+            
+                <a href="../aws/firehose.html">
+            
+                    
+                    Firehose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../aws/ecs.html">
+            
+                <a href="../aws/ecs.html">
+            
+                    
+                    ECS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../aws/bookmarks.html">
             
                 <a href="../aws/bookmarks.html">
             
@@ -527,7 +553,33 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14" data-path="../misc/">
+        <li class="chapter " data-level="1.14" data-path="../circleci/">
+            
+                <a href="../circleci/">
+            
+                    
+                    CircleCI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../vagrant/">
+            
+                <a href="../vagrant/">
+            
+                    
+                    Vagrant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../misc/">
             
                 <a href="../misc/">
             
@@ -594,7 +646,13 @@
 sudo apt-file update
 </code></pre><p>この後</p>
 <pre><code>apt-file list &lt;package_name&gt;
-</code></pre>
+</code></pre><h2 id="あのファイル、どのパッケージかな？を探す">あのファイル、どのパッケージかな？を探す</h2>
+<pre><code>sudo apt-get install apt-file
+sudo apt-file update
+apt-file search FILENAME
+</code></pre><h2 id="あの-command-をインストール">あの command をインストール</h2>
+<h3 id="telnet">telnet</h3>
+
                                 
                                 </section>
                             
@@ -637,7 +695,7 @@ sudo apt-file update
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Debian","level":"1.5","depth":1,"next":{"title":"PostgreSQL","level":"1.6","depth":1,"path":"postgresql/README.md","ref":"postgresql/README.md","articles":[{"title":"anonymizer","level":"1.6.1","depth":2,"path":"postgresql/anonymizer.md","ref":"postgresql/anonymizer.md","articles":[]},{"title":"backup and restore","level":"1.6.2","depth":2,"path":"postgresql/backup-and-restore.md","ref":"postgresql/backup-and-restore.md","articles":[]},{"title":"barman","level":"1.6.3","depth":2,"path":"postgresql/barman.md","ref":"postgresql/barman.md","articles":[]},{"title":"clustering","level":"1.6.4","depth":2,"path":"postgresql/clustering.md","ref":"postgresql/clustering.md","articles":[]},{"title":"repmgr","level":"1.6.5","depth":2,"path":"postgresql/repmgr.md","ref":"postgresql/repmgr.md","articles":[]}]},"previous":{"title":"CLI","level":"1.4.4.1","depth":3,"path":"azure/storage-cli.md","ref":"azure/storage-cli.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro-fixed","custom-js-css","copy-code-button","@dogatana/page-toc-button","@dogatana/honkit-plugin-back-to-top-button","livereload"],"styles":{"website":"assets/website.css"},"pluginsConfig":{"livereload":{},"@dogatana/page-toc-button":{},"search-pro-fixed":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"custom-js-css":{},"@dogatana/honkit-plugin-back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"debian/README.md","mtime":"2021-04-12T00:25:13.094Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-05-05T10:25:19.151Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Debian","level":"1.5","depth":1,"next":{"title":"PostgreSQL","level":"1.6","depth":1,"path":"postgresql/README.md","ref":"postgresql/README.md","articles":[{"title":"anonymizer","level":"1.6.1","depth":2,"path":"postgresql/anonymizer.md","ref":"postgresql/anonymizer.md","articles":[]},{"title":"backup and restore","level":"1.6.2","depth":2,"path":"postgresql/backup-and-restore.md","ref":"postgresql/backup-and-restore.md","articles":[]},{"title":"barman","level":"1.6.3","depth":2,"path":"postgresql/barman.md","ref":"postgresql/barman.md","articles":[]},{"title":"clustering","level":"1.6.4","depth":2,"path":"postgresql/clustering.md","ref":"postgresql/clustering.md","articles":[]},{"title":"repmgr","level":"1.6.5","depth":2,"path":"postgresql/repmgr.md","ref":"postgresql/repmgr.md","articles":[]}]},"previous":{"title":"CLI","level":"1.4.4.1","depth":3,"path":"azure/storage-cli.md","ref":"azure/storage-cli.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro-fixed","custom-js-css","copy-code-button","@dogatana/page-toc-button","@dogatana/honkit-plugin-back-to-top-button"],"styles":{"website":"assets/website.css"},"pluginsConfig":{"search-pro-fixed":{},"custom-js-css":{},"copy-code-button":{},"@dogatana/page-toc-button":{},"@dogatana/honkit-plugin-back-to-top-button":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"debian/README.md","mtime":"2021-05-27T14:06:52.686Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-08-12T15:22:23.138Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -708,10 +766,6 @@ sudo apt-file update
     
         
         <script src="../gitbook/gitbook-plugin-@dogatana/honkit-plugin-back-to-top-button/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

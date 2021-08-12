@@ -10,3 +10,12 @@
 - [Apache Kafkaって本当に大丈夫？～故障検証のオーバービューと興味深い挙動の紹介～](https://www.slideshare.net/hadoopxnttdata/hadoop-spark-conference-japan-2019nttdata)
 - https://kafka.apache.org/quickstart
 - [Apache Kafkaの概要とアーキテクチャ](https://qiita.com/sigmalist/items/5a26ab519cbdf1e07af3)
+- [Keybase is secure messaging and file-sharing.](https://keybase.io/)
+  - https://book.keybase.io/
+  - https://wiki.archlinux.jp/index.php/Keybase
+- [TcpDump Cheat sheet](https://pentesting.dhound.io/blog/tcpdump-cheatsheet)
+- [【Tech Blog】Vulsを用いた脆弱性検出・管理フローの構築①](https://segaxd.co.jp/news/post/20201223-79301.html)
+- [RHEL 8 の cloud-init の設定および管理](https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/8/pdf/configuring_and_managing_cloud-init_for_rhel_8/Red_Hat_Enterprise_Linux-8-Configuring_and_Managing_cloud-init_for_RHEL_8-ja-JP.pdf)
+- [PostgreSQL - ネットワークチェンジニアとして](https://changineer.info/server/postgresql)
+- [DKIM の署名を手動で付与してみる](https://tech.quickguard.jp/posts/dkim/)
+- [ISO 8601 と RFC 3339 の違いは T を許容するかどうか](https://medium.com/easyread/understanding-about-rfc-3339-for-datetime-formatting-in-software-engineering-940aa5d5f68a)

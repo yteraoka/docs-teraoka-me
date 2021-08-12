@@ -16,3 +16,22 @@
 
 - [kubectl editしたくない人のためのkubectl patchコマンド](https://qiita.com/loftkun/items/eeae3d79226491958323)
 - https://kubernetes.io/docs/tasks/manage-kubernetes-objects/update-api-object-kubectl-patch/
+
+## kubeapp
+
+Helm でアプリをデプロイするための Web UI
+
+https://github.com/kubeapps/kubeapps
+
+## How to Write Your Own CNI Plug-in with Bash
+
+https://www.altoros.com/blog/kubernetes-networking-writing-your-own-simple-cni-plug-in-with-bash/
+
+## Backup
+
+- [velero](https://velero.io/)
+- [k10](https://www.kasten.io/)
+
+## Misc
+
+- https://github.com/mittwald/kube-httpcache
